@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+    <title>Random Link Generator</title>
+  </head>
+  <body>
+    <h1>Click a button for something to do online</h1>
+    <div id="button_div">
+        <a href="fun-link"><button>Fun Link</button></a>
+        <a href="game-link"><button>Game Link</button></a>
+        <a href="news-link"><button>News Link</button></a>
+    </div>
+    <div id="link_div">
+        <h2><a id="link" href="{{ link }}" target="_blank"> {{ description }} </a></h2>
+    </div>
+  </body>
+</html>
